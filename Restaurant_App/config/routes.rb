@@ -8,9 +8,11 @@ Rails.application.routes.draw do
   resources :servers, only: [:new, :create]
 
   resources :foods
-  resources :parties do
-    resources :orders
-  end
+  resources :orders
+  resources :parties
+  # resources :parties do
+  #   resources :orders
+  # end
 
   get '/servers/log_in' => "servers#log_in", as: :log_in
   get '/servers/profile' => "servers#profile", as: :profile

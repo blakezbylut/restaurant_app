@@ -1,13 +1,13 @@
 class OrdersController < ApplicationController
 
-  # def index
-  #   @orders = Order.all
-  # end
+  def index
+    @orders = Order.all
+  end
 
   def new
+    @party = Party.find(params[:party_id])
     @order = Order.new
     @foods = Food.all
-    @party = Party.find(params[:party_id])
   end
 
   def edit
@@ -22,8 +22,8 @@ class OrdersController < ApplicationController
   end
 
   def create
-    new_order = Order.create order_params.merge({party_id: params[:party_id]})
-    redirect_to party_path(params[:party_id])
+    new_order = Order.create order_params
+    redirect_to profile_path
   end
 
   def update
@@ -34,7 +34,7 @@ class OrdersController < ApplicationController
 
   def destroy
     Order.destroy params[:id]
-    redirect_to profile_path
+    redirect_to party_path
   end
 
   private
