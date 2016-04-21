@@ -1,0 +1,16 @@
+<h2>Edit Food Item!</h2>
+
+<%= form_for @food do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <br>
+  <%= f.label :cost %>
+  <%= f.number_field :cost %>
+
+  <br>
+
+  <%= f.submit 'Add Item' %>
+
+<% end %>
+
+<%= link_to "DELETE", food_path(@food), method: :delete, class: "delete-food-button" %>

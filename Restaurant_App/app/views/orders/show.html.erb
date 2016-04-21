@@ -1,0 +1,4 @@
+<h2><%= link_to( @order.id, order_path(@order.id) ) %></h2>
+<h3>Party: <%=@party.id%></h3>
+
+<%= link_to "Edit Order", edit_order_path(@order.id), class: "edit-order-button" %>

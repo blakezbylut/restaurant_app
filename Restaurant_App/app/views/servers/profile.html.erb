@@ -1,0 +1,18 @@
+<h1>Welcome back, <%= @server.username %></h1>
+
+<h3>Your parties!</h3>
+
+<div class="add-party-button">
+  <%= link_to "Add new party!", new_party_path %>
+</div>
+
+<div class="parties-div">
+  <% @parties.each do |party| %>
+    <ul>
+      <li class="card-li">Table: <%= link_to( party.id, party_path(party.id) ) %></li>
+      <li class="card-li">Guests: <%= link_to( party.guest_count, party_path(party.id) ) %></li>
+    </ul>
+  </div>
+  <% end %>
+
+<div class="logout-button"><%= button_to "Logout", '/sessions', method: :delete %></div>

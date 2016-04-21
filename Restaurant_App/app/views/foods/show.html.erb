@@ -1,0 +1,4 @@
+<h2>Item: <%= link_to( @food.name, food_path(@food.id) ) %></h2>
+<h3>Price: <%=@food.cost%></h3>
+
+<%= link_to "Edit Item", edit_food_path(@food.id), class: "edit-food-button" %>

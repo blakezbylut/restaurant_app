@@ -1,0 +1,131 @@
+label {
+  display: inline;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+body {
+  text-align: center;
+  background-color: slategrey;
+}
+
+h1{
+  text-align: center;
+  font-family: Lucida Sans Unicode;
+  margin-top: 50px;
+}
+
+p{
+  text-align: center;
+  font-size: 20px;
+}
+
+ul {
+  text-align: center;
+  margin-top: 10px;
+}
+
+li {
+  list-style: none;
+  display: inline;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.home-link {
+  position: absolute;
+  left: 30px;
+  font-size: 25px;
+}
+
+.sign-up-link {
+  position: absolute;
+  right: 30px;
+  font-size: 25px;
+}
+
+.log-in-link {
+  position: absolute;
+  right: 170px;
+  font-size: 25px;
+}
+
+.profile-link{
+  position: absolute;
+  left: 160px;
+  font-size: 25px;
+}
+a.profile-link{
+  padding: 5px 25px;
+  border-radius: 20px;
+}
+a.profile-link:hover{
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.welcome-h1 {
+  margin-top: 200px;
+  font-size: 70px;
+}
+a.home-link{
+  padding: 5px 25px;
+  border-radius: 20px;
+}
+a.home-link:hover{
+  background-color: rgba(0, 0, 0, 0.1);
+}
+a.log-in-link{
+  padding: 5px 25px;
+  border-radius: 20px;
+}
+a.log-in-link:hover{
+  background-color: rgba(0, 0, 0, 0.1);
+}
+a.sign-up-link{
+  padding: 5px 25px;
+  border-radius: 20px;
+}
+a.sign-up-link:hover{
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.logout-button {
+  text-align: center;
+  margin-top: 200px;
+}
+.logged-in {
+  float: right;
+}
+.parties-div {
+  background-color: rgba(255,255,255,0.6);
+  padding: 5px;
+  position: relative;
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+.card-li{
+  margin: 0;
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */

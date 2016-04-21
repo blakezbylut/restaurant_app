@@ -1,0 +1,15 @@
+<h2>Add a new order!</h2>
+
+<%= form_for @order do |o| %>
+
+  <!-- <%= o.label :party_id %>
+  <%= o.select( :party_id, options_for_select(@parties.map {|party| [party.guest_count, party.id]})) %>
+  hidden form here for selecting @party.id to default  -->
+  <br>
+  <%= o.label :food_id %>
+  <%= o.select( :food_id, options_for_select(@foods.map {|food| [food.name, food.cost, food.id]})) %>
+  <br>
+
+  <%= o.submit %>
+
+<% end %>

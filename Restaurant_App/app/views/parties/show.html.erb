@@ -1,0 +1,15 @@
+<h2>Party ID: <%= link_to( @party.id, party_path(@party.id) ) %></h2>
+<h3>Guest count: <%=@party.guest_count%></h3>
+<!-- <h3>Paid?: <%=@party.has_paid%></h3> -->
+
+
+<% @orders.each do |order| %>
+
+  <%= order.food.name %>
+  <%= order.food.cost %>
+
+<% end %>
+
+
+
+<%= link_to "Edit Party", edit_party_path(@party.id), class: "hi" %>
