@@ -3,6 +3,11 @@ label {
   margin-left: 10px;
   margin-right: 10px;
 }
+form {
+  display: inline;
+  margin-left: 10px;
+  margin-right: 10px;
+}
 
 body {
   text-align: center;
@@ -93,7 +98,7 @@ a.sign-up-link:hover{
 }
 .logout-button {
   text-align: center;
-  margin-top: 200px;
+  margin-top: 100px;
 }
 .logged-in {
   float: right;

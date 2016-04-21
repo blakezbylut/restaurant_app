@@ -1,5 +1,5 @@
-<h2>Party ID: <%= link_to( @party.id, party_path(@party.id) ) %></h2>
-<h3>Guest count: <%=@party.guest_count%></h3>
+<h2>Party # <%= link_to( @party.id, party_path(@party.id) ) %></h2>
+<h3>Guests: <%=@party.guest_count%></h3>
 <!-- <h3>Paid?: <%=@party.has_paid%></h3> -->
 
 
@@ -10,6 +10,6 @@
 
 <% end %>
 
-
+<h3><%= link_to "Add order", new_party_order_path(@party.id), class: "" %></h3>
 
 <%= link_to "Edit Party", edit_party_path(@party.id), class: "hi" %>
