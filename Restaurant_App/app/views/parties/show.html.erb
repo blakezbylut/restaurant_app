@@ -21,7 +21,8 @@
           <h4><%= order.food.cost %> $</h4>
         </td>
         <td>
-          <%= link_to "Remove", order_path(@order), method: :delete, class: "Hi" %>
+          <%= link_to "DELETE", order_path(order.id, :party => @party.id), method: :delete, class: "hi" %>
+
         </td>
       </tr>
     <% end %>

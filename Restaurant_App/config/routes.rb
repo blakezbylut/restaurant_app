@@ -3,17 +3,16 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'welcome#index'
+  root 'servers#log_in'
 
   resources :servers, only: [:new, :create]
 
   resources :foods
-  resources :orders
+  resources :orders, as: "orders"
   resources :parties
   # resources :parties do
   #   resources :orders
   # end
-
   get '/servers/log_in' => "servers#log_in", as: :log_in
   get '/servers/profile' => "servers#profile", as: :profile
 

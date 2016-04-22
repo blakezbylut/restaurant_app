@@ -23,7 +23,7 @@ class OrdersController < ApplicationController
 
   def create
     new_order = Order.create order_params
-    redirect_to profile_path
+    redirect_to party_path(params[:order][:party_id])
   end
 
   def update
@@ -34,7 +34,7 @@ class OrdersController < ApplicationController
 
   def destroy
     Order.destroy params[:id]
-    redirect_to party_path
+    redirect_to party_path(params[:party])
   end
 
   private

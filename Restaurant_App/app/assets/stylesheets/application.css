@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Arvo:400,400italic");
+
 label {
   display: inline;
   margin-left: 10px;
@@ -12,6 +14,7 @@ form {
 body {
   text-align: center;
   background-color: slategrey;
+  margin: 0;
 }
 
 h1{
@@ -32,6 +35,7 @@ p{
 ul {
   text-align: center;
   margin-top: 10px;
+  height: 35px;
 }
 
 li {
@@ -43,30 +47,51 @@ li {
 
 a {
   text-decoration: none;
+  color: snow;
+}
+.nav-bar{
+  background-color: #212121;
+  margin-top: 0;
+  margin-bottom: 100px;
+}
+.burgs{
+  margin-top: 100px;
+  font-size: 80px;
+  font-family: Arvo;
+
+}
+.burgs-text{
+  font-family: Arvo;
+  font-size: 50px;
 }
 
 .home-link {
   position: absolute;
-  left: 30px;
-  font-size: 25px;
+  right: 170px;
+  font-size: 15px;
+  color: #FAF0E6;
 }
 
 .sign-up-link {
-  position: absolute;
-  right: 30px;
-  font-size: 25px;
+  font-size: 20px;
+  color: #333;
+  font-family: Arvo;
 }
 
 .log-in-link {
   position: absolute;
-  right: 170px;
-  font-size: 25px;
+  right: 30px;
+  font-size: 15px;
+  color: #FAF0E6;
+}
+.new-user{
+  margin-top: 50px;
 }
 
 .profile-link{
   position: absolute;
   left: 160px;
-  font-size: 25px;
+  font-size: 20px;
 }
 a.profile-link{
   padding: 5px 25px;
