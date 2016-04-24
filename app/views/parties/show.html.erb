@@ -1,4 +1,4 @@
-<h2>Party # <%= link_to( @party.id, party_path(@party.id) ) %></h2>
+<h2>Party # <%= link_to( @party.id, party_path(@party.id) )%></h2>
 <!-- <h3>Paid?: <%=@party.has_paid%></h3> -->
 
 <table align="center">
@@ -20,15 +20,16 @@
         <td>
           <h4><%= order.food.cost %> $</h4>
         </td>
-        <td>
-          <%= link_to "DELETE", order_path(order.id, :party => @party.id), method: :delete, class: "hi" %>
+        <td class="remove-item">
+          <%= link_to "Remove", order_path(order.id, :party => @party.id), method: :delete, class: "hi" %>
 
         </td>
       </tr>
     <% end %>
+    <h5>$<%= @total %></h5>
   </thead>
 </table>
 
-<h3><%= link_to "Add item", "#{new_order_path}?party_id=#{@party.id}" , class: "" %></h3>
+<h3><%= link_to "Add item", "#{new_order_path}?party_id=#{@party.id}" , class: "black-button" %></h3>
 
 <%= link_to "Edit Party", edit_party_path(@party), class: "hi" %>

@@ -4,12 +4,6 @@
   <%= v.label :guest_count %>
   <%= v.number_field :guest_count %>
   <br>
-  <%= v.label :has_paid %>
-  <%= v.text_field :has_paid %>
-  <br>
-  <%= v.label :server_id %>
-  <%= v.select( :server_id, options_for_select(@servers.map {|server| [server.username, server.id]})) %>
-  <br>
   <%= v.submit %>
 
 <% end %>

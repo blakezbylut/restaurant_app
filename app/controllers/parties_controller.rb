@@ -14,6 +14,12 @@ class PartiesController < ApplicationController
   def show
     @party = Party.find params[:id]
     @orders = @party.orders
+    @total = 0
+     @party.foods.each do |food|
+       @total += food.price
+     end
+ end
+
   end
 
   # users POST /users(.:format)     users#create

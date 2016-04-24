@@ -13,7 +13,8 @@ form {
 
 body {
   text-align: center;
-  background-color: slategrey;
+  background-image: url(http://zoominteriors.xyz/wp-content/uploads/2016/03/white-wood-floor-white-wood-floor-12.jpg);
+  background-size: cover;
   margin: 0;
 }
 
@@ -27,6 +28,7 @@ h4{
   margin-bottom: 0;
 }
 
+
 p{
   text-align: center;
   font-size: 20px;
@@ -34,7 +36,7 @@ p{
 
 ul {
   text-align: center;
-  margin-top: 10px;
+  margin-top: 20px;
   height: 35px;
 }
 
@@ -49,14 +51,17 @@ a {
   text-decoration: none;
   color: snow;
 }
+black-button {
+  color: black;
+}
 .nav-bar{
-  background-color: #212121;
+  background-color: rgba(211,211,211,0.7);
   margin-top: 0;
   margin-bottom: 100px;
 }
 .burgs{
   margin-top: 100px;
-  font-size: 80px;
+  font-size: 60px;
   font-family: Arvo;
 
 }
@@ -67,8 +72,15 @@ a {
 
 .home-link {
   position: absolute;
-  right: 170px;
-  font-size: 15px;
+  left: 30px;
+  font-size: 18px;
+  color: #FAF0E6;
+}
+
+.log-in-link {
+  position: absolute;
+  right: 30px;
+  font-size: 18px;
   color: #FAF0E6;
 }
 
@@ -78,12 +90,6 @@ a {
   font-family: Arvo;
 }
 
-.log-in-link {
-  position: absolute;
-  right: 30px;
-  font-size: 15px;
-  color: #FAF0E6;
-}
 .new-user{
   margin-top: 50px;
 }
@@ -94,7 +100,7 @@ a {
   font-size: 20px;
 }
 a.profile-link{
-  padding: 5px 25px;
+  padding: 3px 15px;
   border-radius: 20px;
 }
 a.profile-link:hover{
@@ -105,19 +111,15 @@ a.profile-link:hover{
   font-size: 70px;
 }
 a.home-link{
-  padding: 5px 25px;
+  padding: 3px 15px;
   border-radius: 20px;
 }
-a.home-link:hover{
-  background-color: rgba(0, 0, 0, 0.1);
-}
+
 a.log-in-link{
-  padding: 5px 25px;
+  padding: 3px 15px;
   border-radius: 20px;
 }
-a.log-in-link:hover{
-  background-color: rgba(0, 0, 0, 0.1);
-}
+
 a.sign-up-link{
   padding: 5px 25px;
   border-radius: 20px;
@@ -125,15 +127,11 @@ a.sign-up-link{
 a.sign-up-link:hover{
   background-color: rgba(0, 0, 0, 0.1);
 }
-.logout-button {
-  text-align: center;
-  margin-top: 100px;
-}
 .logged-in {
   float: right;
 }
 .parties-div {
-  background-color: rgba(255,255,255,0.6);
+  background-color: rgba(0,0,0,0.5);
   padding: 5px;
   position: relative;
   width: 200px;
@@ -146,11 +144,36 @@ a.sign-up-link:hover{
   margin: 0;
   font-size: 30px;
   margin-right: 5px;
+  text-align: center;
+
 }
 .add-party-button{
   font-size: 20px;
+  margin-top: 50px;
 }
-
+.logout-button {
+  text-align: center;
+  margin-top: 70px;
+}
+.hi{
+  color: black;
+  font-family: Arvo;
+}
+.remove-item{
+  text-align: center;
+}
+.centering{
+}
+.menu {
+  font-size: 40px;
+  color: black;
+  font-family: Arvo;
+}
+.food-list{
+  font-family: Arvo;
+  font-weight: bold;
+  font-size: 20px;
+}
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.

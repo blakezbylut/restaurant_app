@@ -1,19 +1,31 @@
+<% if @server.username == "admin" %>
+
+<h3>You are an admin. You have great power...</h3>
+
+<%= link_to "Edit Menu", foods_path, class: "menu" %>
+
+<div class="logout-button"><%= button_to "Logout", '/sessions', method: :delete %></div>
+
+<% else %>
+
+
 <h1>Welcome back, <%= @server.username %></h1>
 
 <h3>Complete your orders!</h3>
 
-<div class="add-party-button">
-  <%= link_to "Add new party!", new_party_path %>
-</div>
-
 
   <% @parties.each do |party| %>
   <div class="parties-div">
-    <ul>
+    <ul class="centering">
       <li class="card-li">Party #: <%= link_to( party.id, party_path(party.id) ) %></li>
       <li></li>
     </ul>
   </div>
   <% end %>
 
+  <div class="add-party-button">
+    <%= link_to "Add new party!", new_party_path, class: "hi" %>
+  </div>
+
 <div class="logout-button"><%= button_to "Logout", '/sessions', method: :delete %></div>
+<% end %>
